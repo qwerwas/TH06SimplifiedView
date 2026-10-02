@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>TH06SimplifiedView</AssemblyName>
+    <AssemblyTitle>TH06 Simplified View</AssemblyTitle>
+    <Version>0.1.0</Version>
+    <RootNamespace>TH06SimplifiedView</RootNamespace>
+    <!-- exe 文件图标 (资源管理器/任务栏进程图标); 窗口图标由 MainForm 从 exe 提取, 三处统一 -->
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <!-- test/ 是嵌套的独立测试工程, 不许被主工程的隐式 glob 吃进去 -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);test/**</DefaultItemExcludes>
+  </PropertyGroup>
+
+</Project>
